@@ -2,7 +2,7 @@ pipeline{
 	agent {
 	label {
 		label 'slave'
-		customWorkspace '/git'
+		customWorkspace '/home/ec2-user'
 		}
 	}
           stages {
@@ -18,7 +18,7 @@ pipeline{
                         }
 		stage ('copy index') {
                         steps {
-                                sh "sudo cp -r /git/index.html /var/www/html"
+                                sh "sudo cp -r /home/ec2-user/index.html /var/www/html"
                                 }
                         }
 		}
