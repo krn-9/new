@@ -2,7 +2,7 @@ pipeline {
   agent {
     label {
       label 'built-in'
-      customWorkspace '/home/ec2-user/project'
+      customWorkspace '/home/ec2-user/project/slave2'
       }
       }
   stages {
